@@ -1,0 +1,18 @@
+# функции
+A15RGB		KEYWRORD2
+RGB		KEYWRORD2
+HSV		KEYWRORD2
+off		KEYWRORD2
+palette		KEYWRORD
+blinking	KEYWRORD2
+smoothBlinking		KEYWRORD2
+gradient	KEYWRORD2
+
+# константы
+
+GENERAL_ANODE	LITERAL1
+GENERAL_CATHODE	LITERAL1
+
+# структуры
+
+colors		KEYWRORD3
