@@ -9,10 +9,8 @@ smoothBlinking		KEYWRORD2
 gradient	KEYWRORD2
 
 # константы
-
 GENERAL_ANODE	LITERAL1
 GENERAL_CATHODE	LITERAL1
 
 # структуры
-
 colors		KEYWRORD3
