@@ -134,148 +134,148 @@ class A15RGB {
     }
 
 
-    void gradient(uint8_t r, uint8_t g, uint8_t b, uint8_t r0, uint8_t g0, uint8_t b0, uint8_t speedGradient = 100, uint8_t sDGradient = 1) {
+    void gradient(uint8_t r, uint8_t g, uint8_t b, uint8_t r0, uint8_t g0, uint8_t b0, uint8_t speedGradient = 100, uint8_t step = 1) {
       static uint8_t r1 = r;
       static uint8_t g1 = g;
       static uint8_t b1 = b;
       static uint32_t timer = millis();
       if (millis() - timer >= speedGradient && r1 < r0 && g1 < g0 && b1 < b0) {
         timer = millis();
-        r1 += sDGradient;
-        g1 += sDGradient;
-        b1 += sDGradient;
+        r1 += step;
+        g1 += step;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && r1 > r0 && g1 < g0 && b1 < b0) {
         timer = millis();
-        r1 -= sDGradient;
-        g1 += sDGradient;
-        b1 += sDGradient;
+        r1 -= step;
+        g1 += step;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && r1 < r0 && g1 > g0 && b1 < b0) {
         timer = millis();
-        r1 += sDGradient;
-        g1 -= sDGradient;
-        b1 += sDGradient;
+        r1 += step;
+        g1 -= step;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && r1 < r0 && g1 < g0 && b1 > b0) {
         timer = millis();
-        r1 += sDGradient;
-        g1 += sDGradient;
-        b1 -= sDGradient;
+        r1 += step;
+        g1 += step;
+        b1 -= step;
       }
       if (millis() - timer >= speedGradient && r1 > r0 && g1 > g0 && b1 < b0) {
         timer = millis();
-        r1 -= sDGradient;
-        g1 -= sDGradient;
-        b1 += sDGradient;
+        r1 -= step;
+        g1 -= step;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && r1 > r0 && g1 < g0 && b1 > b0) {
         timer = millis();
-        r1 -= sDGradient;
-        g1 += sDGradient;
-        b1 -= sDGradient;
+        r1 -= step;
+        g1 += step;
+        b1 -= step;
       }
       if (millis() - timer >= speedGradient && r1 < r0 && g1 > g0 && b1 > b0) {
         timer = millis();
-        r1 += sDGradient;
-        g1 -= sDGradient;
-        b1 -= sDGradient;
+        r1 += step;
+        g1 -= step;
+        b1 -= step;
       }
       if (millis() - timer >= speedGradient && r1 > r0 && g1 > g0 && b1 > b0) {
         timer = millis();
-        r1 -= sDGradient;
-        g1 -= sDGradient;
-        b1 -= sDGradient;
+        r1 -= step;
+        g1 -= step;
+        b1 -= step;
       }
       if (millis() - timer >= speedGradient && r1 < r0 && g1 < g0) {
         timer = millis();
-        r1 += sDGradient;
-        g1 += sDGradient;
+        r1 += step;
+        g1 += step;
       }
       if (millis() - timer >= speedGradient && r1 > r0 && g1 < g0) {
         timer = millis();
-        r1 -= sDGradient;
-        g1 += sDGradient;
+        r1 -= step;
+        g1 += step;
       }
       if (millis() - timer >= speedGradient && r1 < r0 && g1 > g0) {
         timer = millis();
-        r1 += sDGradient;
-        g1 -= sDGradient;
+        r1 += step;
+        g1 -= step;
       }
       if (millis() - timer >= speedGradient && r1 > r0 && g1 > g0) {
         timer = millis();
-        r1 -= sDGradient;
-        g1 -= sDGradient;
+        r1 -= step;
+        g1 -= step;
       }
       if (millis() - timer >= speedGradient && r1 < r0 && b1 < b0) {
         timer = millis();
-        r1 += sDGradient;
-        b1 += sDGradient;
+        r1 += step;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && r1 > r0 && b1 < b0) {
         timer = millis();
-        r1 -= sDGradient;
-        b1 += sDGradient;
+        r1 -= step;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && r1 < r0 && b1 > b0) {
         timer = millis();
-        r1 += sDGradient;
-        b1 -= sDGradient;
+        r1 += step;
+        b1 -= step;
       }
       if (millis() - timer >= speedGradient && r1 > r0 && b1 > b0) {
         timer = millis();
-        r1 -= sDGradient;
-        b1 -= sDGradient;
+        r1 -= step;
+        b1 -= step;
       }
       if (millis() - timer >= speedGradient && g1 < g0 && b1 < b0) {
         timer = millis();
-        g1 += sDGradient;
-        b1 += sDGradient;
+        g1 += step;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && g1 > g0 && b1 < b0) {
         timer = millis();
-        g1 -= sDGradient;
-        b1 += sDGradient;
+        g1 -= step;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && g1 < g0 && b1 > b0) {
         timer = millis();
-        g1 += sDGradient;
-        b1 -= sDGradient;
+        g1 += step;
+        b1 -= step;
       }
       if (millis() - timer >= speedGradient && g1 > g0 && b1 > b0) {
         timer = millis();
-        g1 -= sDGradient;
-        b1 -= sDGradient;
+        g1 -= step;
+        b1 -= step;
       }
       if (millis() - timer >= speedGradient && r1 < r0) {
         timer = millis();
-        r1 += sDGradient;
+        r1 += step;
       }
       if (millis() - timer >= speedGradient && g1 < g0) {
         timer = millis();
-        g1 += sDGradient;
+        g1 += step;
       }
       if (millis() - timer >= speedGradient && b1 < b0) {
         timer = millis();
-        b1 += sDGradient;
+        b1 += step;
       }
       if (millis() - timer >= speedGradient && r1 > r0) {
         timer = millis();
-        r1 -= sDGradient;
+        r1 -= step;
       }
       if (millis() - timer >= speedGradient && g1 > g0) {
         timer = millis();
-        g1 -= sDGradient;
+        g1 -= step;
       }
       if (millis() - timer >= speedGradient && b1 > b0) {
         timer = millis();
-        b1 -= sDGradient;
+        b1 -= step;
       }
       RGB(r1, g1, b1);
     }
 
-    void gradient(colors* color, colors* color0, uint8_t speedGradient = 100, uint8_t sDGradient = 1) {
-      gradient(color, color0, speedGradient, sDGradient);
+    void gradient(colors* color, colors* color0, uint8_t speedGradient = 100, uint8_t step = 1) {
+      gradient(color, color0, speedGradient, step);
     }
 
   private:
