@@ -1,6 +1,9 @@
 # A15RGB 
 Библиотека для очень лёгкого управления RGB светодиодом!
 
+[![Foo](https://img.shields.io/badge/ПОДПИСАТЬСЯ-НА%20ОБНОВЛЕНИЯ-brightgreen.svg?style=social&logo=telegram&color=blue)](https://t.me/Arduino15Libs)
+[СКАЧАТЬ ZIP-БИБЛИОТЕКУ](https://codeload.github.com/Arduino15/A15RGB/zip/refs/heads/main)
+
 ## Подключение/инициализация
 ```cpp
 #include <A15RGB.h>                                                      // подключение
@@ -49,5 +52,6 @@ BLACK        (#000000)
 
 Примеры находятся в папке [examples](https://github.com/Arduino15/A15RGB/tree/main/examples).
 
-
+## обратная связь
+Если возникнут вопросы пишите в [чат](https://t.me/Arduino15Chat) или [мне](mailto:ardbazin@gmail.com)!
 
