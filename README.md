@@ -1,7 +1,7 @@
+[![Foo](https://img.shields.io/badge/ПОДПИСАТЬСЯ-НА%20ОБНОВЛЕНИЯ-brightgreen.svg?style=social&logo=telegram&color=blue)](https://t.me/Arduino15Libs)
+
 # A15RGB 
 Библиотека для очень лёгкого управления RGB светодиодом!
-
-[![Foo](https://img.shields.io/badge/ПОДПИСАТЬСЯ-НА%20ОБНОВЛЕНИЯ-brightgreen.svg?style=social&logo=telegram&color=blue)](https://t.me/Arduino15Libs)
 
 [скачать ZIP-библиотеку](https://codeload.github.com/Arduino15/A15RGB/zip/refs/heads/main)
 
