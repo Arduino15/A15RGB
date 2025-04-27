@@ -50,7 +50,10 @@ WHITE        (#FFFFFF)
 GRAY         (#7F7F7F)
 BLACK        (#000000)
 ```
-
+# макрос
+```cpp
+#define BRIGHTNESS    //макрос для яркости (писать до подключения библиотеки)
+```
 Примеры находятся в папке [examples](https://github.com/Arduino15/A15RGB/tree/main/examples).
 
 ## обратная связь
