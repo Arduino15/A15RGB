@@ -54,6 +54,7 @@ BLACK        (#000000)
 ```cpp
 #define BRIGHTNESS    //макрос для яркости (писать до подключения библиотеки)
 ```
+# пример
 Примеры находятся в папке [examples](https://github.com/Arduino15/A15RGB/tree/main/examples).
 
 ## обратная связь
