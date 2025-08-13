@@ -1,5 +1,9 @@
 #pragma once
 
+#ifdef ESP32 || ESP8266
+#error "Does not work on the ESP!"
+#endif
+
 #include "colors.h"
 
 #define GENERAL_ANODE 1
